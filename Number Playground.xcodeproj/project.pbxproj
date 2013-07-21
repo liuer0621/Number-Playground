@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		511BA893177E2E6000537BA1 /* Number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 511BA892177E2E6000537BA1 /* Number.cpp */; };
+		511BA896177E30D800537BA1 /* GameSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 511BA895177E30D800537BA1 /* GameSprite.cpp */; };
+		5185A2EF178BC9E50086AAEC /* number_sheet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5185A2EE178BC9E50086AAEC /* number_sheet.plist */; };
+		5185A2F1178DE1E60086AAEC /* number_sheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 5185A2F0178DE1E60086AAEC /* number_sheet.png */; };
+		51A7F5A6177D5121001F36CE /* bg_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A7F5A5177D5121001F36CE /* bg_small.png */; };
+		51A7F5A8177D51B1001F36CE /* bg_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A7F5A7177D51B1001F36CE /* bg_small.png */; };
 		51B229FE1764862400854F65 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B229FD1764862400854F65 /* QuartzCore.framework */; };
 		51B22A001764862400854F65 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B229FF1764862400854F65 /* OpenGLES.framework */; };
 		51B22A021764862400854F65 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B22A011764862400854F65 /* OpenAL.framework */; };
@@ -201,10 +207,18 @@
 		51B22C8F1764862800854F65 /* CCTableViewCell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51B22C8E1764862800854F65 /* CCTableViewCell.cpp */; };
 		51B22C931764862800854F65 /* HttpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51B22C921764862800854F65 /* HttpClient.cpp */; };
 		51B22C9C1764862800854F65 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51B22C9B1764862800854F65 /* AppDelegate.cpp */; };
-		51B22C9F1764862800854F65 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51B22C9E1764862800854F65 /* HelloWorldScene.cpp */; };
+		51B22C9F1764862800854F65 /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51B22C9E1764862800854F65 /* GameLayer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		511BA891177E2E5300537BA1 /* Number.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Number.h; sourceTree = "<group>"; };
+		511BA892177E2E6000537BA1 /* Number.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Number.cpp; sourceTree = "<group>"; };
+		511BA894177E30C700537BA1 /* GameSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameSprite.h; sourceTree = "<group>"; };
+		511BA895177E30D800537BA1 /* GameSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSprite.cpp; sourceTree = "<group>"; };
+		5185A2EE178BC9E50086AAEC /* number_sheet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = number_sheet.plist; path = Resources/number_sheet.plist; sourceTree = "<group>"; };
+		5185A2F0178DE1E60086AAEC /* number_sheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = number_sheet.png; path = ../../resources/iphone/number_sheet.png; sourceTree = "<group>"; };
+		51A7F5A5177D5121001F36CE /* bg_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_small.png; path = ../resources/PNG/bg_small.png; sourceTree = "<group>"; };
+		51A7F5A7177D51B1001F36CE /* bg_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_small.png; path = ../../resources/PNG/bg_small.png; sourceTree = "<group>"; };
 		51B229FA1764862400854F65 /* Number Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Number Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B229FD1764862400854F65 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		51B229FF1764862400854F65 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -632,8 +646,8 @@
 		51B22C981764862800854F65 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		51B22C9A1764862800854F65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		51B22C9B1764862800854F65 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
-		51B22C9D1764862800854F65 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
-		51B22C9E1764862800854F65 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		51B22C9D1764862800854F65 /* GameLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameLayer.h; path = Classes/GameLayer.h; sourceTree = "<group>"; };
+		51B22C9E1764862800854F65 /* GameLayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GameLayer.cpp; path = Classes/GameLayer.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -659,6 +673,7 @@
 		51B229F11764862400854F65 = {
 			isa = PBXGroup;
 			children = (
+				51A7F5A5177D5121001F36CE /* bg_small.png */,
 				51B22A0D1764862400854F65 /* Number Playground */,
 				51B229FC1764862400854F65 /* Frameworks */,
 				51B229FB1764862400854F65 /* Products */,
@@ -703,6 +718,9 @@
 		51B22A0E1764862400854F65 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5185A2F0178DE1E60086AAEC /* number_sheet.png */,
+				5185A2EE178BC9E50086AAEC /* number_sheet.plist */,
+				51A7F5A7177D51B1001F36CE /* bg_small.png */,
 				51B22A0F1764862400854F65 /* CloseNormal.png */,
 				51B22A111764862400854F65 /* CloseSelected.png */,
 				51B22A131764862400854F65 /* Default.png */,
@@ -1517,8 +1535,12 @@
 			children = (
 				51B22C9A1764862800854F65 /* AppDelegate.h */,
 				51B22C9B1764862800854F65 /* AppDelegate.cpp */,
-				51B22C9D1764862800854F65 /* HelloWorldScene.h */,
-				51B22C9E1764862800854F65 /* HelloWorldScene.cpp */,
+				51B22C9D1764862800854F65 /* GameLayer.h */,
+				51B22C9E1764862800854F65 /* GameLayer.cpp */,
+				511BA891177E2E5300537BA1 /* Number.h */,
+				511BA892177E2E6000537BA1 /* Number.cpp */,
+				511BA894177E30C700537BA1 /* GameSprite.h */,
+				511BA895177E30D800537BA1 /* GameSprite.cpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1585,6 +1607,10 @@
 				51B22A221764862400854F65 /* Icon@2x.png in Resources */,
 				51B22A241764862400854F65 /* iTunesArtwork in Resources */,
 				51B22AB61764862500854F65 /* ChangeLog in Resources */,
+				51A7F5A6177D5121001F36CE /* bg_small.png in Resources */,
+				51A7F5A8177D51B1001F36CE /* bg_small.png in Resources */,
+				5185A2EF178BC9E50086AAEC /* number_sheet.plist in Resources */,
+				5185A2F1178DE1E60086AAEC /* number_sheet.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1768,7 +1794,9 @@
 				51B22C8F1764862800854F65 /* CCTableViewCell.cpp in Sources */,
 				51B22C931764862800854F65 /* HttpClient.cpp in Sources */,
 				51B22C9C1764862800854F65 /* AppDelegate.cpp in Sources */,
-				51B22C9F1764862800854F65 /* HelloWorldScene.cpp in Sources */,
+				51B22C9F1764862800854F65 /* GameLayer.cpp in Sources */,
+				511BA893177E2E6000537BA1 /* Number.cpp in Sources */,
+				511BA896177E30D800537BA1 /* GameSprite.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1900,6 +1928,7 @@
 				51B22CA41764862800854F65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
